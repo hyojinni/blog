@@ -11,24 +11,31 @@
 <body>
   <div id="app">
     <h1>{{ welcome }}</h1>
-    <h2>{{ message }}</h2>
+    <h4>{{ message }}</h4>
     <h3>{{ count }}</h3>
-    <button @click="pressed">Increment Counter</button>
+    <button @click="pressedIncrement">Increment Counter</button>
+    <button @click="pressedDecrement">Decrement Counter</button>
   </div>
   <script>
     const store = new Vuex.Store({
       state: {
-        message: 'Hello From Vuex',
-        count: 0
+        message: 'increment / decrement',
+        count: 100
       },
       mutations: {
         increment(state, payload) {
           state.count += payload;
+        },
+        decrement(state, payload) {
+          state.count -= payload;
         }
       },
       actions: {
         increment(state, payload) {
           state.commit('increment', payload);
+        },
+        decrement(state, payload) {
+          state.commit('decrement', payload);
         }
       },
       getters: {
@@ -43,7 +50,7 @@
     new Vue({
       el: '#app',
       data: {
-        welcome:'Hello World'
+        welcome:'간단한 증감 카운터'
       },
       computed: {
         message() {
@@ -54,8 +61,11 @@
         }
       },
       methods: {
-        pressed() {
+        pressedIncrement() {
           store.dispatch('increment', 10);
+        },
+        pressedDecrement() {
+          store.dispatch('decrement', 10);
         }
       }
     })
