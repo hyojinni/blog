@@ -78,7 +78,7 @@ import * as d3 from "d3";
 - `.enter()`{:.property} 데이터 개수 만큼 태그가 부족할때, 부족한 갯수만큼 플레이스 홀더를 반환
 - `.append()`{:.property} 새로운 태그 추가
 - `.exit()`{:.property} 종료 (더이상 필요없는 태그 반환)
-- `.remove`{:.property} 현재 문서에서 선택된 태그를 제거
+- `.remove`{:.property} 현재 문서에서 선택된 태그를 제거 
 
 
 ##### 축(Axis) 함수
