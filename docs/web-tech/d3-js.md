@@ -62,7 +62,7 @@ import * as d3 from "d3";
 ```
 
 ### D3.js 동작과정
-{.bigger}
+{:.bigger}
 
 - `Loading`{:.property} 시각적 요소를 그리기 전 보여주고자 하는 데이터를 불러온다.
 - `Selecting-Bindin`{:.property} 시각적 요소 안에 데이터 수치를 입력한 코드에 맞춰 연동시킨다.
