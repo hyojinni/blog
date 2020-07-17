@@ -73,11 +73,11 @@ ul {
 ```
 
 ##### list-style-type
-- `disc`{:.property}
-- `circle`{:.property}
-- `square`{:.property}
-- `decimal`{:.property}
-- `decimal-leading-zero`{:.property}
+- `disc`{:.property} ●
+- `circle`{:.property} ○
+- `square`{:.property} ■
+- `decimal`{:.property} 1. 2. 3...
+- `decimal-leading-zero`{:.property} 01. 02....10. 11.
 - `lower-roman`{:.property}
 - `upper-roman`{:.property}
 - `lower-greek`{:.property}
@@ -85,8 +85,8 @@ ul {
 - `upper-latin`{:.property}
 - `armenian`{:.property}
 - `georgian`{:.property}
-- `lower-alpha`{:.property}
-- `upper-alpha`{:.property}
+- `lower-alpha`{:.property} a. b. c...
+- `upper-alpha`{:.property} A. B. C...
 - `none`{:.property}
 {:.list}
 
