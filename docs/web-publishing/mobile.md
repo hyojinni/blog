@@ -137,4 +137,4 @@ window.addEventListener('resize', function(){
 ## 참고링크
 - [PC, MOBILE 구별하기](https://studyhardgogo.tistory.com/139){:target="_blank"}
 - [Responsive Youtube Embed](https://www.avexdesigns.com/blog/responsive-youtube-embed){:target="_blank"}
-- [유튜브(Youtube) 영상 비율에 맞게 (반응형 사이즈)로 가져오기](https://code-study.tistory.com/35){:target="_blank"}
+- [유튜브(Youtube) 영상 비율에 맞게 가져오기](https://code-study.tistory.com/35){:target="_blank"}
