@@ -32,4 +32,4 @@ Mutations 에는 순차적인 로직들만 선언하고 Actions 에는 비 순�
 setTimeout() 이나 서버와의 http 통신 처리 같이 결과를 받아올 타이밍이 예측되지 않은 로직은 Actions 에 선언
 actions 를 호출할 때는 아래와 같이 dispatch() 를 이용 
 
-[Increment Counter](https://hyojinni.github.io/blog/sample/vuex.html){:target="_blank"}
+<!-- [Increment Counter](https://hyojinni.github.io/blog/sample/vuex.html){:target="_blank"} -->
