@@ -16,6 +16,23 @@ nav_order: 90
 
 ---
 
+### 정보 접근성 인증 분야 안내
+ 
+- WA인증 (Web Accessibility)
+  > PC Web, Mobile Web 사이트에 대한 접근성 인증<br>
+  [WA인증](www.webwatch.or.kr/wac){:target="_blank"}<br>
+  {:.list}
+ 
+- MA인증 (Mobile Application Accessibility)<br>
+  > IOS, Android 기반 모바일 App에 대한 접근성 인증<br>
+  [MA인증](www.webwatch.or.kr/mac){:target="_blank"}<br>
+  {:.list}
+ 
+- SA인증 (Software & Solution Accessibility)
+  > Web Module, Web Solution 등 웹 애플리케이션 및 응용 소프트웨어 등에 대한 접근성 인증<br>
+  [SA인증](www.webwatch.or.kr/sac){:target="_blank"}<br>
+  {:.list}
+
 ### Meta Tag
 
 ##### 모바일 웹페이지를 가로크기에 맞추기
