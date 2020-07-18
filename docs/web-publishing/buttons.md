@@ -18,8 +18,8 @@ nav_order: 2
 
 ## 비교
 
-#### Bootstrap
-{:.title}
+### Bootstrap
+{:.bigger}
 
 ##### Button styles
 {:.bigger }
@@ -83,8 +83,8 @@ nav_order: 2
 ---
 
 
-#### JustTheDocs
-{:.title}
+### JustTheDocs
+{:.bigger}
 
 ##### Button styles
 {:.bigger }

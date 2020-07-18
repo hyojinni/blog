@@ -15,9 +15,11 @@ nav_order: 5
 {:toc .contents-list}
 
 ---
-## 종류
+### 종류
+{:.bigger}
 
-### 순서없는 목록
+##### 순서없는 목록
+{:.bigger}
 
 ```html
 <ul>
@@ -27,7 +29,8 @@ nav_order: 5
 </ul>
 ```
 
-### 순서있는 목록 
+##### 순서있는 목록
+{:.bigger}
 
 ```html
 <ol>
@@ -37,7 +40,8 @@ nav_order: 5
 </ol>
 ```
 
-### 설명있는 목록
+##### 설명있는 목록
+{:.bigger}
 
 <div class="code-example" markdown="1">
 <dl>
@@ -60,9 +64,11 @@ nav_order: 5
 </dl>
 ```
 
-## 목록속성 CSS
+### 목록속성 CSS
+{:.bigger}
 
 ##### 기본 설정 제거
+{:.bigger}
 
 ```css
 ul {
@@ -73,6 +79,8 @@ ul {
 ```
 
 ##### list-style-type
+{:.bigger}
+
 - `disc`{:.property} ●
 - `circle`{:.property} ○
 - `square`{:.property} ■
@@ -95,6 +103,7 @@ ul {
 
 
 ##### list-style-image
+{:.bigger}
 
 ```css
 ul {

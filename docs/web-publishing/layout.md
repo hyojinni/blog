@@ -18,8 +18,8 @@ nav_order: 7
 ## Layout Utilities 비교
 
 
-#### Bootstrap
-{:.title}
+### Bootstrap
+{:.bigger}
 
 ##### 여백
 {:.bigger }
@@ -84,14 +84,10 @@ nav_order: 7
  {:.block}
 
 
+---
 
-#### Meterial
-{:.title}
-
-
-
-#### JustTheDocs
-{:.title}
+### JustTheDocs
+{:.bigger}
 
 ##### 여백
 {:.bigger }
@@ -183,8 +179,8 @@ margin-bottom : 16px
 
 ## Grid
 
-#### Bootstrap
-{:.title}
+##### Bootstrap
+{:.bigger}
 
 ```html
 <div class="row">
@@ -261,14 +257,14 @@ margin-bottom : 16px
 - `speech`{:.property}	웹 페이지를 읽어주는 스크린 리더(screenreader).
 {:.list}
 
-----
-
-#### Bootstrap
-{:.title}
 
 
-###### Media Query
+### Bootstrap
+{:.bigger}
 
+
+##### Media Query
+{:.bigger}
 
 ```css
 /* Small devices (tablets, ≥ 768px) */
@@ -282,7 +278,8 @@ margin-bottom : 16px
 
 ```
 
-###### Responsive Images
+##### Responsive Images
+{:.bigger}
 
 ```css
 .img-responsive {
@@ -302,10 +299,8 @@ margin-bottom : 16px
 | `.col-xl` | 1140px ≥ 1200px       |
 
 
-
-
-#### Material
-{:.title}
+### Material
+{:.bigger}
 
 | class     | Screen size          |
 |:----------|:---------------------|
@@ -316,8 +311,8 @@ margin-bottom : 16px
 | `.xl`     | 1920px ~             |
 
 
-#### JustTheDocs
-{:.title}
+### JustTheDocs
+{:.bigger}
 
 | class     | Screen size             |
 |:----------|:------------------------|
