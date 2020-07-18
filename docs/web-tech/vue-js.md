@@ -193,10 +193,6 @@ v-bind 디렉티브를 사용:
 npm install vue-router
 ```
 
-##### install(npm)
-{:.bigger}
-
-
 ##### 사용법
 {:.bigger}
 
