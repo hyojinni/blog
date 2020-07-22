@@ -190,11 +190,22 @@ Lean UX의 순서
 ### 이벤트 버블링 
 하위 엘리먼트에서 상위 엘리먼트로 이벤트가 전파되는 특성
 
-----
+---
 
 ### 스코프
 어떤 변수의 대한 유효범위
+
 ---
+
+### Repository
+코드가 존재하는 장소(주소)를 지정.
+npm docs 명령을 사용하여 패키지 저장소를 쉽게 찾을 수 있다.
+
+---
+
+
+
+
 ## 참고링크
 - [CSS Houdini](https://css-houdini.rocks/){:target="_blank"}
 - [CSS Paint API](https://wit.nts-corp.com/2018/05/02/5214){:target="_blank"}

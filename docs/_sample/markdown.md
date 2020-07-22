@@ -53,5 +53,69 @@ nav_order: 4
 
 ---
 
+{: .material-icons .face} 
+
+<i class="material-icons">insert_drive_file</i>
+
+
 ## 참고링크
 - [colgroup](https://developer.mozilla.org/ko/docs/Web/HTML/Element/colgroup){:target="_blank"}
+
+
+
+<i class="material-icons">insert_drive_file</i> macro/link.html 
+
+```js
+  {% from "macro/link.html" import link %}
+  {{ link( '/admin/products' , "List" , req_path ) }}
+  {{ link( '/admin/products/write' , "Write" , req_path )  }}
+```
+
+<i class="material-icons">insert_drive_file</i> base.html
+
+```js
+{# 
+    href : 태그안의 링크
+    text : 링크안에 들어갈 텍스트
+    current_url : 현재 url
+#}
+{% macro link(  href , text , current_url ) %}
+    <li {% if href == current_url  %} class="active" {% endif %}>
+        <a href="{{ href }}">{{ text }}</a>
+    </li>
+{% endmacro %}
+```
+
+- {{}} : 변수 사용 <br>
+  value로서 {{}}를 사용할 경우, ""안에 넣어줘야 한다는 점 <br>
+
+  ```js
+  (예)<input name="name" value="{{name}}"/>
+  ```
+
+- if, else, endif
+
+  ```js
+  {% if isLogin %}
+  (이 부분은 로그인 했을때 보여주고 싶은 tag들을 보여준다.)
+  {% else %}
+  (로그인 안 했을때의 보여주고 싶은 tag들을 보여준다.)
+  {% endif %}
+  ```
+
+- block, endblock (include같은 개념)
+
+  ```js
+  {% block content %}{% endblock %}
+  ```
+
+- for
+
+  ```js
+   {% for item in sequence %}     
+      (반복할 내용....)
+   {% endfor %}
+  ```
+
+{:.mb-6}
+

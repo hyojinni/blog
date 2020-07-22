@@ -10,6 +10,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  vertical-align: middle;
 }
 .site-logo {
   position: relative;
@@ -37,6 +38,11 @@ h2.no_toc {
 h4.title {
   font-size: 1.25rem !important;
 }
+h3.bigger {
+  &.alone {
+    margin-bottom: 1.5rem;
+  }
+}
 
 h5.bigger {
   font-size: 1.15rem !important;
@@ -46,6 +52,7 @@ h5.bigger {
 h6.bigger {
   font-size: 1.1rem !important;
 }
+
 
 ul.block {
   padding-left: 0;
@@ -144,6 +151,10 @@ blockquote.special {
   border-radius: 4rem;
   padding: 0 0 0 1rem;
   border-left-width: 5px;
+}
+
+code {
+  vertical-align: 2px;
 }
 
 code.special {
