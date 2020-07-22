@@ -16,6 +16,7 @@ permalink: /
 ---
 
 <div class="code-example table-of-contents" markdown="1">
+
 | Web Publishing | Web tech |
 |:---------------|:---------|
 | [Typography](/blog/docs/web-publishing/typography)    | [CSS3](/blog/docs/web-tech/css3)            |
