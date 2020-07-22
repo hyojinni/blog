@@ -211,6 +211,9 @@ terminal → 해당폴더경로 > node start **↵** <br>
 ├─server.js
 ```
 
+##### 기본 예제
+{:.bigger}
+
 <i class="material-icons text-green-000">insert_drive_file</i> app.js 
 
 ```js
