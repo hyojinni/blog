@@ -15,13 +15,52 @@ nav_order: 8
 {:toc .contents-list}
 
 ---
+### Node.js 
+{:.bigger}
+ 
+- Node.js : Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임
+- LTS : 장기적인 지원이 보장받는 버전
+- Current : 장기적인 지원을 보장받을수는 없으나 최신기능 모두 체험해 볼수 있는 기능
 
-### npm 
+##### Packages and modules : about sematic versioning
+{:.bigger}
+
+- 1.0.0
+- 1.0.`1` : (Major releases) 하위버전과 호환이 가능하고 버그를 수정했을 때
+- 1.`1`.0 : (Minor releases) 하위버전과 호환이 가능하고 새로운 기능이 추가 되었을때
+- `2`.0.0 : (Patch releases) 하위버전과 호환이 되지 않지만 새롭고 매우 중요한 변화가 생겼을때
+
+> Patch releases : 1.0 or 1.0.x or `~`1.0.4 <br>
+Minor releases : 1 or 1.x or `^`1.0.4 <br>
+Major releases * or x <br>
+{:.list}
+
+
+
+### 패키지 설치 
 {:.bigger .alone}
 
 `npm install <패키지명>`{:.property}
 - Node.js에서 사용할 수 있는 모듈인 패키지를 설치
 {:.mb-6}
+
+`npm install <패키지명>`{:.property} `--save -dev`{:.special}
+ - --save -dev 의 의미는 해당 패키지가 정상적으로 설치되고 package.json파일 안에 추가되어 다음번 인스톨할때 자동으로 설치 되도록 하는 옵션.
+- package.json파일에 추가되느냐 안되느냐의 차이로 보면 된다.
+
+`npm install <패키지명>`{:.property} `-g`{:.special}
+- 글로벌하게 설치. 다른 node프로젝트에서도 사용할수 있도록 하는 옵션.
+
+`npx`{:.property}
+- 설치 후 바로 실행하다는 의미
+- npm을 설치하면 자동으로 설치되므로 별도의 설치 필요없음
+- node-modules폴더에 저앙해서 실행하는 게 목적이 아니라 해당 모듈을 일회성으로 설치해서 실행
+- 임시폴더에 설정이 되고 일회성으로 실행
+- save, uninstall 같은 옵션이 필요없다.
+  ```js
+  npm cowsay " hello"
+  ```
+  {:.mb-6}
 
 `npm init`{:.property}
 - **package.json**{:.text-purple-000} 파일을 작성.
@@ -40,6 +79,7 @@ nav_order: 8
 
 `$ npm install -g nodemon`{:.property}
 - 서버를 실행하면 코드가 바뀔때마다 자동으로 재시작
+- <i class="material-icons fs-4 text-blue-000"> settings</i>vscode → File → Auto Save가 설정이 되어 있고 파일의 변화가 생기면 자동으로 이 변화를 감지해서 실행
 {:.mb-6}
 
 `npm install morgan`{:.property}
@@ -47,9 +87,9 @@ nav_order: 8
 {:.mb-6}
 
 `npm install nunjucks`{:.property}
+- 템플릿 엔진을 자동화를 사용하기 위해 사용
 
 <i class="material-icons text-green-000">insert_drive_file</i> macro/link.html 
-
 
 ```js
   { % from "macro/link.html" import link % }
