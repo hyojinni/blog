@@ -204,6 +204,32 @@ npm docs 명령을 사용하여 패키지 저장소를 쉽게 찾을 수 있다.
 ---
 
 
+### 이터러블
+- 순회 가능한 자료구조
+- 이터레이터를 리턴하는 [Symbol.iterator]() 를 가진 값
+- Array, String, Map, Set, DOM data structures
+
+
+
+### 이터레이터
+- 순회 가능한 객체
+- { value, done } 객체를 리턴하는 next() 를 가진 값
+- 이터러블 프로토콜을 지킨 이터러블은 Symbol.iterator 메소드를 가지고 있다.
+- 해당 이터러블이 Symbol.iterator 메소드를 호출하면 이터레이터를 반환할 수 있다.
+- 이터레이터는 이터러블의 각 요소를 순회하기 위해 next 메소드를 갖는다.
+- next는 각 단계의 값인 value와 모든 단계를 끝냈는지를 알려주는 done을 반환한다.
+
+
+----
+
+### Thread(쓰레드)
+쓰레드는 프로세스 내에서 실제로 작업을 수행하는 주체를 의미한다.
+- single thread(싱글쓰레드) - 첫번째 작업을 시작하고 끝낸 후 다음 두번째 작업을 시작한다.(node.js)
+- Multi Thread(멀티쓰레드) - 두개의 쓰레드가 두개의 작업을 짧은시간동안 번갈아가며 수행하기 때문에 두개의 작업이 동시에 처리되는것으로 보인다.
+
+
+---
+
 
 
 ## 참고링크
@@ -212,3 +238,5 @@ npm docs 명령을 사용하여 패키지 저장소를 쉽게 찾을 수 있다.
 - [디독 : 린 UX를 실무에 적용하는 효과적인 방법]
 - [Lean UX Aagile UX 소개...](https://trello.com/c/utUdqIkJ){:target="_blank"}
 - [컴파일? 빌드? 배포? 개념과 차이는 무엇일까?](https://itholic.github.io/qa-compile-build-deploy/){:target="_blank"}
+-  [[JS] 이터러블과 이터레이터](https://n-log.tistory.com/21){:target="_blank"} 
+-  [싱글쓰레드와 멀티쓰레드](https://blog.naver.com/drogba02/221632424858){:target="_blank"} 

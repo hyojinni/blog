@@ -118,4 +118,5 @@ nav_order: 4
   ```
 
 {:.mb-6}
-
+```js
+'use strict'

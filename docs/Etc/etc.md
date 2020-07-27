@@ -1,3 +1,4 @@
+<!--
 ---
 layout: default
 title: Etc
@@ -8,5 +9,7 @@ permalink: /docs/etc
 
 ## Etc.
 {: .fs-6 .fw-300 }
+
+-->
 
 
