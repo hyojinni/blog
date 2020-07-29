@@ -22,8 +22,10 @@ nav_order: 8
 - LTS : 장기적인 지원이 보장받는 버전
 - Current : 장기적인 지원을 보장받을수는 없으나 최신기능 모두 체험해 볼수 있는 기능
 
-##### Packages and modules : about sematic versioning
+##### Packages and modules 
 {:.bigger}
+
+###### About sematic versioning
 
 - 1.0.0
 - 1.0.`1` : (Major releases) 하위버전과 호환이 가능하고 버그를 수정했을 때

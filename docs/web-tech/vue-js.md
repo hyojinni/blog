@@ -59,6 +59,22 @@ $ vue create <project-name>
 ### vue
 {:.bigger}
 
+### Vue
+{:.bigger}
+
+- 오픈소스 자바스크립트 프레임웍
+- 반응형 애플리케이션 쉽게 만들수 있는 기능 제공
+- 쉽고 유연한 데이터 바인딩
+- 재사용할 수 있는 컴포넌트 제공
+
+> **vue create `f`irstapp `--default`** <br>
+`f` 소문자(대문자 안됨)
+`--default` babel, eslint적용해 생성한다는 것
+
+- babel : 구형 브라우저가 지원하지 않는 자바스크립트를 최신버전을 적용할 수 있도록 해줌
+- eslint : 구문에러, 코드 품질
+
+
 ##### 기본코드
 {:.bigger}
 
@@ -179,6 +195,15 @@ v-bind 디렉티브를 사용:
   ```js
   <div v-for="(item, index) in array" :key="index">...</div>
   ```
+
+
+##### computed
+{:.bigger}
+
+- 데이터 조작하는 데 유용함
+- data객체 내 프롶티가 변화가 발생할 때마다 반응하도록 설정
+
+
 
 ---
 

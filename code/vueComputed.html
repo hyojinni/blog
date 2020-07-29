@@ -1,0 +1,56 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Computed</title>
+  <style>
+    html, body, div, p, ul, li {margin: 0; padding: 0;}
+    body {font-size: 16px;}
+    #app {display: flex; flex-direction: column; align-items: center; align-content: center;} 
+    .tax {border: 1px solid #ddd; padding: 1rem;} 
+    .tax input {width: 100%; height: 2rem;}
+    .tax-result {display: grid; grid-template-columns: max-content 1fr; }
+    .tax-result dt, .tax-result dd{text-align: right; padding: 0.3rem;}
+  </style>
+</head>
+<body>
+  <div id="app">
+
+    <h3>{{ reversedTitle }}</h3>
+ 
+    <div class="tax">
+      <h4>공급대가: {{ price }}</h4>
+
+      <input type="number" v-model="price">
+      <dl class="tax-result">
+        <dt>공급가액:</dt>
+        <dd>{{ supplyAmount.toFixed() }}</dd>
+        <dt>부가가치세:</dt>
+        <dd>{{ valueAddedTax.toFixed() }}</dd>
+      </dl>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript">
+    var vm = new Vue({
+      el: '#app',
+      data : {
+        title : '안녕하세요',
+        price : 10000
+      },
+      computed: {
+        reversedTitle () {
+          return this.title.split('').reverse().join('')
+        },
+        supplyAmount () {
+          return (this.price * 1.1)
+        },
+        valueAddedTax () {
+          return (this.price / 11)
+        }
+      }
+    });
+  </script>
+</body>
+</html>
