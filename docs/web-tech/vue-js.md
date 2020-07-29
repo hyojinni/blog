@@ -56,9 +56,6 @@ $ vue create <project-name>
 
 --- 
 
-### vue
-{:.bigger}
-
 ### Vue
 {:.bigger}
 
