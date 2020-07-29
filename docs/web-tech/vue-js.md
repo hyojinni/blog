@@ -64,9 +64,10 @@ $ vue create <project-name>
 - 쉽고 유연한 데이터 바인딩
 - 재사용할 수 있는 컴포넌트 제공
 
-> **vue create `f`irstapp `--default`** <br>
-`f` 소문자(대문자 안됨)
-`--default` babel, eslint적용해 생성한다는 것
+> vue create `f` irstapp `--default` <br>
+`f` 소문자(대문자 안됨)<br>
+`--default` babel, eslint적용해 생성한다는 것<br>
+{:.list}
 
 - babel : 구형 브라우저가 지원하지 않는 자바스크립트를 최신버전을 적용할 수 있도록 해줌
 - eslint : 구문에러, 코드 품질
@@ -151,7 +152,8 @@ $ vue create <project-name>
 ##### 속성
 {:.bigger}
 
-v-bind 디렉티브를 사용:
+###### v-bind 디렉티브
+{:.bigger}
 
   ```html
   <div v-bind:id="dynamicId"></div> 
@@ -171,6 +173,24 @@ v-bind 디렉티브를 사용:
     <a @[event]="doSomething"> ... </a>
   ```
 
+  - :src
+  - :href
+  - :class
+  - :style
+  - :key
+
+###### v-model
+{:.bigger}
+
+- 양방향 데이터 바인딩 
+- Form 태그 : input / checkbox / textarea / select 엘레먼트의 속성형태로 사용
+> `v-model.trim` : 좌우 공백 제거 <br>
+`v-model.number` : 데이타타입 Number <br>
+`v-model.lazy` <br>
+`v-model.trim.lazy` <br>
+{:.list}
+
+
 
 ##### 조건문
 {:.bigger}
@@ -188,22 +208,151 @@ v-bind 디렉티브를 사용:
 ##### 반복문
 {:.bigger}
 
-- **v-for**
-  ```js
-  <div v-for="(item, index) in array" :key="index">...</div>
-  ```
+**v-for**
 
+```js
+<div v-for="(item, index) in array" :key="index">{{ item }}</div>
+```
+
+> `item` 하나의 데이터<br>
+`array` 데이터 집합 <br>
+`:key` item의 한속성 <br>
+{: .list}
 
 ##### computed
 {:.bigger}
 
 - 데이터 조작하는 데 유용함
-- data객체 내 프롶티가 변화가 발생할 때마다 반응하도록 설정
+- data객체 내 프로퍼티가 변화가 발생할 때마다 반응하도록 설정
+- <i class="material-icons text-purple-100">code</i> [테스트 코드](https://github.com/hyojinni/blog/blob/master/code/vueComputed.html)
 
+##### 이벤트 수식어
+{:.bigger}
+
+- `event.stopPropagation()` 이벤트 버블링 중지
+- `event.preventDefault()` submit버튼 클릭하면 서버로 form데이터가 바로 전송되지 않게 한다.
+- `@click.stop`
+- `@click.once` 한번만 이벤트 발생
+- `@click.self` 자신만 이벤트 발생
+- `@click.self.capture`
+
+
+##### component
+{:.bigger}
+
+```js
+Vue.component( '컴포넌트이름', {
+  template: 'html코드들'
+})
+```
+
+```js
+import `OurHeader` form './components/header.vue'
+import `OurBody` form './components/body.vue'
+
+export default {
+  name: 'app',
+  components: {OurHeader, OurBody}
+}
+```
+
+**전역 컴포넌트**
+
+> `main.js`에 등록
+{: .list}
+
+```js
+import ChildComponent from './components/ChildComponent'
+Vue.component('child-component', ChildComponent)
+```
+'child-component' Vue 인스턴스
+
+**지역 컴포넌트**
+
+> `app.vue`에 등록
+{: .list}
+
+```js
+import ChildComponent from './components/ChildComponent'
+
+export default {
+  components : {
+    'child-component': ChildComponent
+  }
+}
+```
+
+##### props
+{:.bigger .mt-6}
+
+> 하나의 컴포넌트에서 다른 컴포넌트로 데이터를 전달할 경우
+{: .list}
+
+- `props` : 부모 → 자식
+- `$emit`, `on` : 자식 → 부모
+- `eventBus`를 이용해 데이터 전달 : 부모 ≠ 자식, 발행자와 구독자 패턴으로 컴포넌트간의 전달
+  - 발행부분 : emit() 메서드를 이용
+  - 발행된 이벤트 구독하는 부분은  on()메서드 
+  - cdn
+  ```js
+    const EventBus = new Vue()
+  ```
+  - Vue/Cli 이용
+  ```js
+    import Vue from 'Vue'
+    const EventBus = new Vue()
+    export default EventBus
+  ```
+  - 발행된 이벤트를 삭제 or 한번만 구독하고 싶을 경우
+    ```js
+    EventBus.$off('event-name') //삭제
+    EventBus.$once('event-name', payload => {});
+  ```
+
+
+부모컴포넌트
+```js
+<child :props-name="부모가 전달할 데이터"></child>
+
+//
+<child v-on:sendmessage="receivemessage"></child>
+```
+
+
+자식컴포넌트
+```js
+props: [props-name]
+
+//
+methods: {
+  sendmessage() {
+    this.$emit('sendmessage', this.message);
+  }
+}
+```
+
+
+##### slot
+{:.bigger .mt-6}
+부모가 자녀에게 콘텐츠를 제공
+- unnamed slot
+- named slot
+- scoped slot : 템플릿을 이용하는 재사용이 가능한 특별한 슬롯(자녀 → 부모 데이터 전달)
+  ```js
+  //부모
+  <child>
+    <template slot-scope="childData">
+    ...
+    </template>
+  </child>
+
+  //자녀
+  <slot :childData="sendData">
+  </slot>
+  ```
 
 
 ---
-
 
 ### Vue Router
 {:.bigger}
@@ -328,6 +477,7 @@ export default {
 - 자식은 부모에게 Emit event의 방법
 - 형제 컴포넌트간 데이터를 주고 받으려면 EventBus를 활용
 
+
 ##### install(npm)
 {:.bigger}
 
@@ -406,3 +556,4 @@ npm install vuex --save
 - [Vue CLI3 tutorial](https://kdydesign.github.io/2019/04/22/vue-cli3-tutorial/){:target="_blank"}
 - [Vue Router](https://router.vuejs.org/kr/){:target="_blank"}
 - [Vue Router](https://velog.io/@skyepodium/Vue-Router-fijr95dn4j){:target="_blank"}
+- [예제로 배우는 Vue.js]

@@ -154,7 +154,7 @@ Major releases * or x <br>
 ### HTTP 통신을 할 수 있는 서버를 구현 
 {: .bigger}
 
-##### <i class="material-icons text-red-000">note_add</i> http 
+##### http 
 {: .bigger}
 
 ```js
