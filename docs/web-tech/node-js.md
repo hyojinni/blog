@@ -74,10 +74,14 @@ Major releases * or x <br>
 - 실질적인 nodejs의 표준 프레임워크
 {:.mb-6}
 
+
+`$ npm install axios`{:.property}
+- 뷰에서 권고하는 HTTP 통신 라이브러리
+
+
 `npm update`{:.property}
 - 설치한 패키지를 업데이트
 {:.mb-6}
-
 
 `$ npm install -g nodemon`{:.property}
 - 서버를 실행하면 코드가 바뀔때마다 자동으로 재시작

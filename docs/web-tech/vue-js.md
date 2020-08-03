@@ -2,7 +2,7 @@
 layout: default
 title: Vue.js
 parent: Web Tech
-nav_order: 7
+nav_order: 9
 ---
 
 #  Vue.js
@@ -188,7 +188,7 @@ $ vue create <project-name>
 `v-model.number` : 데이타타입 Number <br>
 `v-model.lazy` <br>
 `v-model.trim.lazy` <br>
-{:.list}
+{: .list}
 
 
 
