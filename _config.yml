@@ -60,8 +60,9 @@ nav_sort: case_insensitive # default, equivalent to nil
 
 # Back to top link
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: "top"
 
+footer_content: "Copyright &copy; 2020."
 #footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\">MIT license.</a>"
 
 # Footer last edited timestamp

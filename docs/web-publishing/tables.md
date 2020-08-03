@@ -124,5 +124,5 @@ Link : [CSS only Responsive Tables](https://codepen.io/dbushell/full/8e6a1ee8541
 - [colgroup](https://developer.mozilla.org/ko/docs/Web/HTML/Element/colgroup){:target="_blank"}
 - [반응형웹에서 데이터 테이블 표현하기](https://iropke.com/archive/data-table.html){:target="_blank"}
 - [반응형테이블코딩](https://blog.naver.com/PostView.nhn?blogId=nsoft21&logNo=221578578071&parentCategoryNo=&categoryNo=14&viewDate=&isShowPopularPosts=true&from=search){:target="_blank"}
-- [Responsive scrollable tables](https://www.456bereastreet.com/archive/201309/responsive_scrollable_tables/){:.target}
-- [CSS only Responsive Tables](https://dbushell.com/2016/03/04/css-only-responsive-tables/){:.target}
+- [Responsive scrollable tables](https://www.456bereastreet.com/archive/201309/responsive_scrollable_tables/){:target="_blank"}
+- [CSS only Responsive Tables](https://dbushell.com/2016/03/04/css-only-responsive-tables/){:target="_blank"}

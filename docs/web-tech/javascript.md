@@ -805,8 +805,70 @@ console.log(g.next())
 ```
 
 
+### template String
+한 문장내에서 변수, 상수, 기존의 데이터를 통합해서 표현할 수 있다.
+
+```js
+'use strict'
+
+  const covid = 'covid';
+  const num = 19;
+  const text = '모두모두';
+
+  const article = `Out!! ${covid}-${num}, ${text} 힘냅시다.`
+  
+  console.log(article);// Out!! covid-19, 모두모두 힘냅시다.
+```
+
+
+### 펼침 연산자
+- 최소한의 코드로 배열을 빠르게 생성하고 조작할 수 있다.
+- 기능 : 배열에 포함한 항목을 목록으로 바꿔준다. 목록은 매개변수 또는 새로운 배열을 생성할 때 사용할 수 있는 일련의 항목
+- ES6+
+
+```js
+function removeItem( items, removable) {
+ const index = items.indexOf(removable);
+ return items.slice(0, index).concat(items.slice(index + 1));
+}
+// ↓ 펼침 연산자를 사용하면
+function removeItem(items, removable) {
+  const index = items.indexOf(removable);
+  return [...items.slice(0, index), ...items.slice(index + 1)]
+}
+```
+
+### 삼항 연산자
+- 조건문 ? 선택문1 : 선택문2 (조건문이 참이면 선택문1이 실행하고 조건문이 거짓이면 선택문2)
+
+
+```js
+// 예 - 자바스크립트 코딩의 기술 책 중
+let permissions;
+if (title === '과장') {
+  permissions = ['근로수당', '수당'];
+} else {
+  permissions = ['근로수당'];
+}
+
+// ↓ 삼항 연산자
+let title = '과장';
+const permissions = title === '과장' ? ['근로수당', '수당'] : ['근로수당'];
+console.log(permissions) // ["근로수당", "수당"] 
+```
+
+
+
+
+
+
+
+
+
 ---
 
 ## 참고
-- [Node 웹 프로그래밍 올인원 패키지 Online.]패스트캠프
+- [Node 웹 프로그래밍 올인원 패키지 Online.] 패스트캠프
+- [자바스크립트 코딩의 기술] 조 모건 지음
+- [삼항연산자](https://velog.io/@daybreak/Javascript-%EC%82%BC%ED%95%AD%EC%97%B0%EC%82%B0%EC%9E%90){:target="_blank"}
 

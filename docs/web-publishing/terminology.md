@@ -230,7 +230,13 @@ npm docs 명령을 사용하여 패키지 저장소를 쉽게 찾을 수 있다.
 
 ---
 
+### 체이닝(chaining)
+새로운 인스턴스를 생성하고 바로 메서드를 연결하는 방법
 
+
+
+
+---
 
 ## 참고링크
 - [CSS Houdini](https://css-houdini.rocks/){:target="_blank"}
