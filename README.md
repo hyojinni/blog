@@ -6,7 +6,10 @@
 
 <hr>
 
-
+```
+// 웹페이지를 호스팅
+bundle exec jekyll serve
+```
 
 #### Blog Theme License
 The theme(Just the doces) is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
