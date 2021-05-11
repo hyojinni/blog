@@ -99,12 +99,16 @@ img {max-width:100%;}
 ##### 전화번호 링크만 없앨때
   ```html
   <meta name="format-detection" content="telephone=no" />
+
+  <a href="sms:12345678900">문자보내기</a>
+  <a href="tel:12345678900">전화걸기</a> 
   ```
 
 ##### 전화번호,이메일,지도 자동링크 방지
   ```html
   <meta name="format-detection" content="telephone=no, address=no, email=no" />
   ```
+  
 
 ##### 유튜브영상 반응형 사이즈로 가져오기
 ```css
