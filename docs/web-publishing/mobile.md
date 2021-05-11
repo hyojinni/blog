@@ -149,6 +149,12 @@ window.addEventListener('resize', function(){
 });
 ```
 
+* 모바일에서 전화걸기, 문자보내기
+```
+<a href="tel:12345678900">전화걸기</a> 
+<a href="sms:12345678900">문자보내기</a>
+<meta name="format-detection" content="telephone=no"> <!-- 숫자로된 항목을 전화번호로 인식안되게 함 -->
+```
 ---
 
 ## 참고링크
