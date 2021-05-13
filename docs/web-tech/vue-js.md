@@ -548,6 +548,7 @@ npm install vuex --save
 
 ---
 ## 참고링크
+- [[PowerShell] 이 시스템에서 스크립트를 실행할 수 없으므로 파일을 로드할 수 없습니다.](https://dog-developers.tistory.com/183){:target="_blank"}
 - [Vuex 주요 기술 요소](https://ict-nroo.tistory.com/107){:target="_blank"}
 - [Vuex에서 Store활용 방법](https://ux.stories.pe.kr/149){:target="_blank"}
 - [Vue.js 최근소식들5 — Vue 3 Alpha 버전 시작 등](https://medium.com/@jeongwooahn/Vue.js 최근소식들5 — Vue 3 Alpha 버전 시작 등/){:target="_blank"}
