@@ -33,6 +33,3 @@ permalink: /
 
 </div>
 
-<div>
-test
-</div>
